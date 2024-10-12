@@ -1,0 +1,33 @@
+.detail-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.half-container {
+  flex: 1;
+  height: 50vh;
+  margin: 16px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.image {
+  width: 70%;
+}
+
+.col {
+  color: #555555;
+  margin-right: 0.5rem
+}
