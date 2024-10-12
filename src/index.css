@@ -11,3 +11,7 @@ a {
   color: #333;
   font-weight: 500;
 }
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,28 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: white;
+  transition: all .5s;
+}
+
+.card-container:hover {
+  box-shadow: 0px 0px 10px 8px #eee;
+  scale: 1.05;
+}
+
+.image-container {
+  height: 200px;
+  padding: 24px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  font-weight: 700;
+}

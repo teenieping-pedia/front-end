@@ -1,0 +1,6 @@
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 100vw;
+  gap: 16px;
+}
