@@ -1,7 +1,9 @@
+import "../styles/footer.css";
+
 const Footer = () => {
   return (
     <footer>
-      Footer
+      &copy; nuing
     </footer>
   )
 }
