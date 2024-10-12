@@ -23,11 +23,26 @@
   line-height: 1.5;
 }
 
-.image {
+.introduce-container {
+  margin: 16px 0;
+}
+
+.detail-name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.detail-description {
+  font-size: 1.2rem;
+  color: #333333;
+  margin: 0;
+}
+
+.detail-image {
   width: 70%;
 }
 
-.col {
+.detail-col {
   color: #555555;
   margin-right: 0.5rem
 }

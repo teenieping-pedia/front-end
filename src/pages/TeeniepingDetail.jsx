@@ -25,32 +25,32 @@ const TeeniepingDetail = () => {
   }, [id]);
 
   if (isLoading) return <p>Loading...</p>
-  if (teenieping === null) return <p>유효하지 않은 접근입니다.</p>
+  if (!teenieping) return <p>유효하지 않은 접근입니다.</p>
   return (
     <div className="detail-container">
       <div className="image-container half-container">
-        <img className="image" src={teenieping.imageUrl} />
+        <img className="detail-image" src={teenieping.imageUrl} />
       </div>
       <div className="info-container half-container">
         <div>
           <Badge text={teenieping.series} />
           <Badge text={teenieping.rank} />
         </div>
-        <div>
-          <p className="name">{teenieping.name}</p>
-          <p className="description">{teenieping.description}</p>
+        <div className="introduce-container">
+          <p className="detail-name">{teenieping.name}</p>
+          <p className="detail-description">{teenieping.description}</p>
         </div>
         <div>
-          <span className="col">소품</span>
-          <span className="row">{teenieping.items}</span>
+          <span className="detail-col">소품</span>
+          <span className="detail-row">{teenieping.items}</span>
         </div>
         <div>
-          <span className="col">마법</span>
-          <span className="row">{teenieping.magic}</span>
+          <span className="detail-col">마법</span>
+          <span className="detail-row">{teenieping.magic}</span>
         </div>
         <div>
-          <span className="col">성격</span>
-          <span className="row">{teenieping.personality}</span>
+          <span className="detail-col">성격</span>
+          <span className="detail-row">{teenieping.personality}</span>
         </div>
       </div>
     </div>
