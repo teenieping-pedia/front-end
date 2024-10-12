@@ -11,7 +11,7 @@ const TeeniepingDetail = () => {
   useEffect(() => {
     const fetchTeenieping = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/teeniepings/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_BASE_URI}/teeniepings/${id}`);
         const data = await response.json();
         setTeenieping(data);
       } catch (error) {

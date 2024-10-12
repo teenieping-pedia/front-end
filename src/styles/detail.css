@@ -46,3 +46,9 @@
   color: #555555;
   margin-right: 0.5rem
 }
+
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+  }
+}

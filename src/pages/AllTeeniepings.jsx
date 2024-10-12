@@ -9,7 +9,7 @@ const AllTeeniepings = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const response = await fetch('http://localhost:3000/teeniepings/summary');
+        const response = await fetch(`${import.meta.env.VITE_BASE_URI}/teeniepings/summary`);
         const data = await response.json();
         setSummary(data);
       } catch (error) {
