@@ -39,7 +39,8 @@
 }
 
 .detail-image {
-  height: 80%;
+  width: 70%;
+  height: auto;
 }
 
 .detail-col {
@@ -49,6 +50,19 @@
 
 @media (max-width: 768px) {
   .detail-container {
-    flex-direction: column;
+    display: block;
+    font-size: 14px;
+  }
+
+  .half-container {
+    height: auto;
+  }
+
+  .detail-name {
+    font-size: 1.4rem;
+  }
+
+  .detail-description {
+    font-size: 1rem;
   }
 }
