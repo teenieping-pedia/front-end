@@ -1,0 +1,18 @@
+.options-container {
+  display: flex;
+  justify-content: end;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-button {
+  padding: 4px;
+  border-radius: 16px;
+  color: #fea5b4;
+  border: 2px solid #fea5b4;
+  background-color: #f9eef0;
+}

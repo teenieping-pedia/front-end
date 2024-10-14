@@ -7,8 +7,8 @@ const TeeniepingList = ({ teeniepings }) => {
       {teeniepings && teeniepings.map((t) => (
         <TeeniepingCard key={t._id} id={t._id} imageUrl={t.imageUrl} series={t.series} rank={t.rank} name={t.name} />
       ))}
-      {!teeniepings &&
-        <p>데이터가 존재하지 않습니다.</p>
+      {!teeniepings.length &&
+        <p>티니핑이 존재하지 않습니다.</p>
       }
     </section>
   )
