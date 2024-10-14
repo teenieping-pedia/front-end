@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import TeeniepingList from "../components/TeeniepingList";
 import Chips from "../components/Chips";
 import "../styles/all.css";
+import useScrollRestoration from "../hooks/useScrollRestoration";
 
 const AllTeeniepings = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,6 +14,8 @@ const AllTeeniepings = () => {
 
   const ranks = ["로열티니핑", "일반티니핑"];
   const series = ["시즌 1", "시즌 2", "시즌 3", "시즌 4"];
+
+  useScrollRestoration(isLoading);
 
   useEffect(() => {
     const fetchSummary = async () => {
