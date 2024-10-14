@@ -11,7 +11,7 @@ body {
   margin: 0;
   border: none;
   min-height: 100vh;
-  font-family: 'TTLaundryGothicR';
+  font-family: 'TTLaundryGothicR', 'Courier New', Courier, monospace;
 }
 
 a {
@@ -22,4 +22,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  font-family: 'TTLaundryGothicR', 'Courier New', Courier, monospace;
+  cursor: pointer;
 }
