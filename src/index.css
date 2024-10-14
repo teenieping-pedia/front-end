@@ -28,3 +28,7 @@ button {
   font-family: 'TTLaundryGothicR', 'Courier New', Courier, monospace;
   cursor: pointer;
 }
+
+input {
+  font-family: 'TTLaundryGothicR', 'Courier New', Courier, monospace;
+}

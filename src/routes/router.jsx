@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import AllTeeniepings from "../pages/AllTeeniepings";
 import TeeniepingDetail from "../pages/TeeniepingDetail";
 import ErrorPage from "../pages/ErrorPage";
+import SearchTeenieping from "../pages/SearchTeenieping";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         path: "teeniepings/:id",
         element: <TeeniepingDetail />,
       },
+      {
+        path: "teeniepings/search",
+        element: <SearchTeenieping />,
+      }
     ]
   },
 ]);

@@ -5,7 +5,10 @@
   font-style: normal;
 }
 
-header {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 5px 5px 5px #eee;
   padding: 12px;
 }
@@ -13,4 +16,32 @@ header {
 .header-logo {
   font-family: 'TTLaundryGothicB', 'Courier New', Courier, monospace;
   color: #fea5b4;
+  margin-right: 16px;
+}
+
+.search-input {
+  width: 350px;
+  border: 2px solid #eee;
+  outline: none;
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.search-input:focus {
+  border: 2px solid pink;
+  background-color: #fff0f3;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    flex: 1;
+  }
 }

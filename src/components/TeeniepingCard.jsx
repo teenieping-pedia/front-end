@@ -4,7 +4,7 @@ import "../styles/card.css";
 
 const TeeniepingCard = ({ id, imageUrl, series, rank, name }) => {
   return (
-    <Link to={`teeniepings/${id}`} className="card-container">
+    <Link to={`/teeniepings/${id}`} className="card-container">
       <div className="image-container">
         <img src={imageUrl} />
       </div>
