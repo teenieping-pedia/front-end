@@ -4,3 +4,9 @@
   max-width: 100vw;
   gap: 16px;
 }
+
+@media (max-width: 768px) {
+  .list-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
